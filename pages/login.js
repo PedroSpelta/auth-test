@@ -7,7 +7,7 @@ function login({ providers }) {
       <h1>this is a login page</h1>
         <button
           onClick={() => {
-            signIn(providers.spotify.id, { callbackUrl: "/teste/aaaa/bbbb" });
+            signIn(providers.spotify.id, { callbackUrl: "/" });
           }}
         >
           log in with {providers.spotify.name}

@@ -73,6 +73,13 @@ export default NextAuth({
       session.user.refreshToken = token.refreshToken;
       session.user.username= token.username;
       return session;
-    }
+    },
+    async signIn(state) {
+      console.log('sign in', state);
+      return true
+    },
+    // async redirect(state) {
+    //   console.log('redirect', state);
+    // },
   }
 })
